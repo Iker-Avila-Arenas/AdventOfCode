@@ -13,7 +13,6 @@ for a in antenas:
     idx = find_in_grid(grid,a)
     for i1 in idx:
         for i2 in idx:
-            vec = 0+0j
             if i1!=i2 and 0<(vec:=2*i1-i2).real<=bounds.real and 0<vec.imag<=bounds.imag : res1.add(vec)
             temp = i1  
             if (vec:=i1-i2) != 0j:
