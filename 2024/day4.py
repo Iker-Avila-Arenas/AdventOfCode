@@ -1,4 +1,4 @@
-#day4
+#day 4
 import sys
 sys.path.insert(0, 'C:/Users/iker_/Documents/AdventOfCode')
 from AoC import * 

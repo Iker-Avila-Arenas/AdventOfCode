@@ -1,3 +1,5 @@
+#useful functions found on the way
+
 def get_grid(filename):
     with open(filename) as f:
         grid = f.read().splitlines()
