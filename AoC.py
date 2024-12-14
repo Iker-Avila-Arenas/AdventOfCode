@@ -10,15 +10,13 @@ def transpose_grid(grid):
     return [[grid[j][i] for j in range(len(grid))] for i in range(len(grid[0]))]
 
 def find_in_grid(grid, c):
-    idx = []
-    y = 1
-    for line in grid:
-        l = list(line)
-        for x in range(len(l)):
-            if l[x] == c:
-                idx.append(x + 1 + y * 1j)
-        y += 1
-    return idx
+    return [
+        x+1 +(y+1)*1j
+        for y, line in enumerate(grid)
+        for x, char in enumerate(line)
+        if char == c
+    ]
+
 
 def tobase(n,M):
     if n == 0:
